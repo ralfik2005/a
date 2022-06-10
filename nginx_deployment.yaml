@@ -28,7 +28,7 @@ spec:
             path: site.conf
       containers:
       - name: nginx
-        image: nginx:latest
+        image: andrewk234/app-nginx-extra
         ports:
         - containerPort: 80
         volumeMounts:

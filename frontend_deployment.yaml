@@ -37,7 +37,7 @@ spec:
         - name: config
           mountPath: /etc/nginx/conf.d
       - name: php
-        image: php:7-fpm
+        image: andrewk234/spt-app
         volumeMounts:
         - name: code
           mountPath: /code
@@ -51,4 +51,4 @@ spec:
         - wget
         - "-O"
         - "/code/index.php"
-        - https://https://raw.githubusercontent.com/ralfik2005/frontend-ao/master/hello.php?token=GHSAT0AAAAAABVODQ756IXFMK4QEVKQ4E5EYVDAGPA
+        - https://raw.githubusercontent.com/ralfik2005/frontend/master/hello.php
